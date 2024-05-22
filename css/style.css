@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  font-family: "CustomFont", sans-serif;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("/fonts/CalibreBlack.otf") format("otf"),
+    url("/fonts/CalibreBlackItalic.otf") format("otf"),
+    url("/fonts/CalibreBold.otf") format("otf"),
+    url("/fonts/CalibreBoldItalic.otf") format("otf"),
+    url("/fonts/CalibreLight.otf") format("otf"),
+    url("/fonts/CalibreLightItalic.otf") format("otf"),
+    url("/fonts/CalibreMedium.otf") format("otf"),
+    url("/fonts/CalibreMediumItalic.otf") format("otf"),
+    url("/fonts/CalibreRegular.otf") format("otf"),
+    url("/fonts/CalibreRegularItalic.otf") format("otf"),
+    url("/fonts/CalibreSemibold.otf") format("otf"),
+    url("/fonts/CalibreSemiboldItalic.otf") format("otf"),
+    url("/fonts/CalibreThin.otf") format("otf"),
+    url("/fonts/CalibreThinItalic.otf") format("otf");
+}
+
+.bg-banner {
+  background-image: url("/img/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-width {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.bg-texture {
+  background-image: url("/img/final-grid.png");
+  background-position: center;
+  background-size: cover;
+}
+.bg-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.accordion-item {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 20px;
+}
+.accordion-item:last-child {
+  margin-bottom: 0px;
+}
+
+.accordion-title {
+  cursor: pointer;
+  padding: 20px 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+}
+.accordion-title-element {
+  width: 25px;
+  height: 16px;
+  background-color: #ba2827;
+  position: absolute;
+  left: 0;
+}
+.accordion-title i {
+  color: #ba2827;
+  font-size: 30px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 0px 80px 30px 80px;
+  font-size: 22px;
+  background-color: #fff;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+.bg-card-shadow {
+  box-shadow: rgba(217, 4, 4, 0.25) 0px 13px 27px -5px,
+    rgba(187, 123, 123, 0.3) 0px 8px 16px -8px;
+}
+
+.bg-card2-shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.bg-card3-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.text-font {
+  font-weight: 400;
+}
+.bg-trans {
+  transition: all 400ms;
+}
