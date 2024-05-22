@@ -106,3 +106,7 @@ body {
 .bg-trans {
   transition: all 400ms;
 }
+
+.overflow-items::-webkit-scrollbar {
+  display: none;
+}
